@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import Link from "next/link";
+import Image from "next/image";
 
 const FeaturedPostCard = ({ post }) => (
   <div className="relative h-72">
@@ -17,7 +18,7 @@ const FeaturedPostCard = ({ post }) => (
         {post.title}
       </p>
       <div className="flex items-center absolute bottom-5 w-full justify-center">
-        <img
+        <Image
           unoptimized
           alt={post.author.name}
           height="30px"
